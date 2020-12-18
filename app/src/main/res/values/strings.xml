@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Food Order App</string>
+    <string name="descriptionFood"> thin well cooked crust topped with cheese and mushrooms</string>
+    <string name="Price">Price</string>
+    <string name="your_Number">Your number</string>
+    <string name="Name">Name</string>
+</resources>
