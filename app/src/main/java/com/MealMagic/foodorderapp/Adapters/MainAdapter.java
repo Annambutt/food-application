@@ -55,7 +55,7 @@ public class MainAdapter extends RecyclerView.Adapter<MainAdapter.viewholder> {
                 intent.putExtra("price", model .getPrice());
                 intent.putExtra("description", model.getDescription());
                 intent.putExtra("name", model.getName());
-                intent.putExtra("type", 2);
+                intent.putExtra("type", 1);
                 context.startActivity(intent);
 
 
