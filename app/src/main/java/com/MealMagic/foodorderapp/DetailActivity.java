@@ -61,7 +61,7 @@ public class DetailActivity extends AppCompatActivity {
             Cursor cursor = helper.getOrderById(id);
             int image = cursor.getInt(4);
 
-            binding.detailImage.setImageResource(cursor.getInt(image));
+            binding.detailImage.setImageResource(image);
             binding.Name.setText(cursor.getString(6));
             binding.priceLable.setText(String.format("%d", cursor.getInt(3)));
             binding.detailDescription.setText(cursor.getString(5));

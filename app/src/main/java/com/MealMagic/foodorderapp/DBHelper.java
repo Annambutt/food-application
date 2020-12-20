@@ -43,7 +43,8 @@ public class DBHelper extends SQLiteOpenHelper {
 sqLiteDatabase.execSQL("DROP table if exists orders");
 onCreate(sqLiteDatabase);
     }
-    public boolean insertOrders(String name,String phone,int price, int image,String desc,String foodname, int quantity){
+
+    public boolean insertOrders(String name, String phone, int price, int image, String desc, String foodname, int quantity) {
         SQLiteDatabase database = getReadableDatabase();
         ContentValues values = new ContentValues();
         values.put("name", name);
@@ -71,7 +72,10 @@ onCreate(sqLiteDatabase);
                 model.setOrderNumber(cursor.getInt(0) + "" );
                 model.setSoldItemName(cursor.getString(1));
                 model.setOrderImage(cursor.getInt(2));
+                model.setOrderNumber(cursor.getInt(0) + "");
+                model.setSoldItemName(cursor.getString(7));
                 model.setPrice(cursor.getInt(3) + "");
+                model.setOrderImage(cursor.getInt(4));
                 orders.add(model);
 
             }
